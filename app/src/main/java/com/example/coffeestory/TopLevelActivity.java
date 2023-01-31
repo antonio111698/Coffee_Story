@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
 
 public class TopLevelActivity extends AppCompatActivity {
 
@@ -25,5 +26,7 @@ public class TopLevelActivity extends AppCompatActivity {
             }
         };
         //Add the listener to the listView
+        ListView listView = findViewById(R.id.list_options);
+        listView.setOnItemClickListener(itemClickListener);
     }
 }
