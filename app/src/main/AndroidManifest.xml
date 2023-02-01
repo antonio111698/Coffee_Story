@@ -12,6 +12,9 @@
         android:theme="@style/Theme.CoffeeStory"
         tools:targetApi="31">
         <activity
+            android:name=".DrinkActivity"
+            android:exported="false" />
+        <activity
             android:name=".DrinkCategoryActivity"
             android:exported="false" />
         <activity
